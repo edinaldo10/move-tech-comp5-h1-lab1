@@ -27,9 +27,6 @@ spec:
             secretKeyRef:
               name: db-secret
               key: url
-        resources:
-          limits:
-            memory: "32Mi"
         livenessProbe:
           httpGet:
             path: /health
